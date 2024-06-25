@@ -1,0 +1,582 @@
+*, html {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+   height: 100%;
+   width: 100%; 
+}
+
+body {
+    background-color:#000;
+    color: #FFF;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .banner {
+    background-color: red;
+    padding: 0px 32px;
+    border-radius: 5px;
+}
+
+header .banner .img-banner {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+}
+
+.banner-escolhas-mobile {
+    display: none;
+}
+
+.lista {
+    width: 75%;
+}
+
+.lista-menu {
+    list-style: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.banner-busca-mesa {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+
+.itens-mobile {
+    display: none;
+}
+
+.banner-busca-mesa li {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+} 
+
+.pedido-mobile {
+    display: none;
+}
+
+.lista-mesa {
+    padding: 15px 25px;
+    font-size: 18px;
+    background-color: #171717;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-buscar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 200;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.banner-escolhas {
+    background-color: red;
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 50px 0px 0px;
+    align-items: center;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.img-lista {
+    width: 60px;
+}
+
+.lista-texto {
+    margin-left: 10px;
+}
+
+main {
+    height: 100%;
+    display: flex;
+}
+
+.pedido {
+    width: 10%;
+    text-align: center;
+}
+
+.lista-pedido {
+    display: block;
+    color: #FFF;
+    width: 15%;
+    height: 100%;
+}
+
+.lista-pedido li {
+    display: block;
+    width: 100%;
+}
+
+.lista-pedido button {
+    background-color: #000;
+    color: #FFF;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 24px 0px 35px 10px;
+}
+
+.estrela {
+    width: 32px;
+    margin-left: 39px;
+}
+
+.cafe {
+    display: block;
+    width: 32px;
+    margin-left: 39px;
+}
+
+.itens {
+    width: 25%;
+    border-radius: 15px;
+}
+
+.lista-itens {
+    width: 100%;
+}
+
+.cardapio {
+    background-color: red;
+    color: #FFF;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 47px 0;
+    font-weight: bold;
+}
+
+.lista-itens li {
+    width: 100%;
+}
+
+.lista-cardapio {
+    background-color: #767676;
+    color: #FFF;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    padding: 47px 0;
+    font-weight: bold;
+}
+
+.lista-itens li {
+    display: block;
+}
+
+.pratos {
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
+    background-color: #2e2d2d;
+}
+
+.titulo {
+    margin-left: 20px;
+    padding: 30px 0;
+    font-size: 20px;
+}
+
+.pratos-da-casa {
+    display: flex;
+    width: 97%;
+    height: 25%;
+    margin: 30px auto;
+    border-radius: 10px;
+    background-color: #000;
+
+}
+
+.pratos-1 {
+    border-radius: 10px;
+    width: 30%;
+    height: 100%;
+}
+
+#descricao {
+    display: block;
+    width: 100%;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.descricao-preco {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#descricao .valor {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+} 
+
+#descricao .ingredientes {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+#descricao button {
+    background-color: red;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 12px 15px;
+    margin-left: 58%;
+}
+
+.pratos-da-casa-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 889px) {
+    header .banner {
+        padding: 0px 44px;
+    }
+
+    header .banner .img-banner { 
+        width: 60px;
+    }
+
+    .pratos-da-casa {
+        height: 32%;
+    }
+
+    .pratos-1 {
+        height: 100%;
+    }
+
+    #descricao button {
+        font-size: 14px;
+        padding: 15px 20px;
+        margin-left: 35%;
+    }
+
+    #descricao h2 {
+        font-size: 26px;
+    }
+
+    #descricao .ingredientes {
+        font-size: 18px;
+    }
+
+    .lista-cardapio {
+        padding: 88px 0;
+    }
+
+    .pedido {
+        width: 14%;
+    }
+
+    .cardapio{
+        padding: 91px 0;
+    }
+
+    .lista-pedido button {
+        font-size: 16px;
+        padding: 56px 0px 66px 10px
+    }
+
+    .pratos-da-casa-mobile {
+        width: 97%;
+        height: 30%;
+        display: flex;
+        background-color: #000;
+        margin: 30px auto;
+        border-radius: 10px;
+    
+    }
+
+    .pratos-da-casa-mobile .pratos-1-mobile {
+        width: 30%;
+        height: 100%;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (max-width: 888px) and (min-width: 810px){
+    .banner-escolhas {
+        font-size: 12px;
+    }
+
+    .img-lista {
+        width: 45px;
+    }
+
+    .button-buscar {
+        font-size: 14px;
+    }
+
+    .button-buscar img {
+        width: 25px;
+    }
+
+    .lista-mesa {
+        font-size: 14px;
+    }
+
+    header .banner {
+        padding: 0px 17px;
+    }
+
+    .lista-pedido button {
+        font-size: 9px;
+    }
+
+    .estrela, .cafe {
+        width: 32px;
+        margin-left: 20px;
+    }
+
+    .pratos-da-casa-mobile {
+        width: 97%;
+        height: 30%;
+        display: flex;
+        background-color: #000;
+        margin: 30px auto;
+        border-radius: 10px;
+    
+    }
+
+    .pratos-da-casa-mobile .pratos-1-mobile {
+        width: 30%;
+        height: 85%;
+        border-radius: 10px;
+    }
+
+    #descricao .ingredientes {
+        font-size: 16px;
+    }
+
+    #descricao button {
+        margin-left: 38%;
+    }
+}
+
+@media screen and (max-width: 809px) and (min-width: 630px) {
+    .img-lista {
+        width: 28px;
+    }
+
+    .lista-texto {
+        font-size: 11px;
+    }
+
+    .button-buscar { 
+        font-size: 11px;
+    }
+
+    .button-buscar img {
+        width: 25px;
+    }
+
+    .lista-mesa {
+        font-size: 11px;
+    }
+
+    header .banner {
+        padding:  0 8px;
+    }
+
+    .lista-pedido button {
+        font-size: 9px;
+        padding: 27px 0px 18px 2px;
+    }
+
+    .pedido {
+        width: 15%;
+    }
+
+    .estrela, .cafe {
+        width: 20px;
+        margin-left: 24px;
+    }
+
+    .lista-cardapio, .cardapio {
+        padding: 30px 0;
+        font-size: 12px;
+    }
+
+    .titulo {
+        margin-left: 12px;
+        padding: 11px 0;
+        font-size: 16px;
+    }
+
+    #descricao h2 {
+        font-size: 16px;
+    }
+
+    #descricao .valor {
+        font-size: 15px;
+        font-weight: bold;
+        margin-right: 19px;
+    }
+
+    #descricao .ingredientes {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+
+    #descricao button {
+        margin-left: 34%;
+        font-size: 11px;
+    }
+
+    .pratos-da-casa {
+        height: 23%;
+    }
+}
+
+@media screen and (max-width: 629px) {
+    header .banner {
+        padding: 0 3px;
+        margin-bottom: 4px;
+    }
+
+    header .banner .img-banner {
+        width: 35px;
+    }
+
+    .lista-mesa {
+        padding: 11px 20px;
+        font-size: 15px;
+    }
+
+    .banner-escolhas {
+        display: none;
+    }
+
+    .banner-escolhas-mobile {
+        background-color: red;
+        font-size: 16px;
+        display: flex;
+        justify-content: space-around;
+        padding: 6px 50px 6px 0px;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .button-buscar {
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .button-buscar img {
+        width: 25px;
+        padding-left: 20px;
+    }
+
+    .img-lista {
+        width: 42px;
+    }
+
+    .lista-texto {
+        list-style: none;
+        margin-left: 10px;
+        font-size: 13px;
+    }
+
+    main {
+        height: 100%;
+        display: block;
+    }
+
+    .pedido {
+        display: none;
+    }
+
+    .pedido-mobile {
+        display: block;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .lista-pedido {
+        display: flex;
+        width: 90% auto;
+    }
+
+    .lista-pedido button {
+        padding: 14px 8px;
+        margin: 3px;
+    }
+
+    .lista-mobile {
+        display: block;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .separacao {
+        margin-left: 135%;
+    }
+    
+    .itens {
+        display: none;
+    }
+
+    .itens-mobile {
+        display: block;
+    }
+
+    .pratos-da-casa { 
+        height: 23%;
+    }
+
+    #descricao {
+        margin-left: 13px;
+        margin-top: 8px;
+    }
+
+    #descricao h2 {
+        font-size: 13px;
+    }
+
+    #descricao .valor {
+        font-size: 12px;
+    }
+
+    #descricao .ingredientes {
+        font-size: 13px;
+    }
+
+    #descricao button {
+        margin-left: 0px;
+        font-size: 10px;
+    }
+}
